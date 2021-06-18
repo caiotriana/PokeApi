@@ -1,6 +1,6 @@
 # O projeto
 
-O LooqPoke foi criado para o challenge da Lockbox, onde o desafio era criar um SPA consumindo a [Poke Api](https://pokeapi.co/), assim podendo os pokemons serem listados em tela, com uma barra de pesquisa para que seja possível fazer a busca por nome ou código do mesmo.
+O desafio era criar um SPA consumindo a [Poke Api](https://pokeapi.co/), assim podendo os pokemons serem listados em tela, com uma barra de pesquisa para que seja possível fazer a busca por nome ou código do mesmo.
 
 > ## Tecnologia utilizada
 Para o projeto foi utilizada as seguintes tecnologias
