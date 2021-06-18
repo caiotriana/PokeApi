@@ -1,43 +1,40 @@
-# Looqbox FrontEnd Challenge
-![Looqbox](https://github.com/looqbox/looqbox-frontend-challenge/blob/master/logo.png)
+# O projeto
 
-## Challenge
-In this challenge you will need to build a **S**ingle **P**age **A**pplication using ReactJS and a provided api
+O LooqPoke foi criado para o challenge da Lockbox, onde o desafio era criar um SPA consumindo a [Poke Api](https://pokeapi.co/), assim podendo os pokemons serem listados em tela, com uma barra de pesquisa para que seja possível fazer a busca por nome ou código do mesmo.
 
-We will not use anything from your project and you are free to use it in your portfolio
+> ## Tecnologia utilizada
+Para o projeto foi utilizada as seguintes tecnologias
+>
+> - React js
+> - Sass
+> - Axios
 
-## Stack
-We use:
-- ReactJS for the front end framework
-- Webpack and Yarn for dependency management and local deployment
+### Iniciando o projeto
 
-But you can use Node and Npm if you prefer :)
+Para o iniciar o projeto é bem simples.
+Primeiro passo - Você terá que rodar o comando para instalar as dependências do projeto, sendo assim : 
+```javascript
+    yarn install
+```
+ou 
 
-## Submitting
-- Make a fork of this repository
-- When you're done send us a pull request
+```javascript
+   npm install
+```
 
-# Guidelines
-You need to make a SPA that shows a list of pokemons, and search them, using the [Pokeapi](https://pokeapi.co/), your app needs to be dynamic, that means you **do not** reload the page to show anything new.
+Logo após as dependências serem instaladas com êxito, basta rodar apenas mais um comando para o projeto se iniciar automaticamente em modo watch. assim abrindo uma porta 3000.
+sendo assim : 
+```javascript
+    yarn start
+```
+ou 
 
-The pokeapi was chosen because of its simplicity to make the requests, as it is a open api, please mind how many times you request data
+```javascript
+   npm start
+```
 
-- In the main page you need a search bar and a loaded list of pokemons (random or just hardcoded)
-- Clicking on any pokemon shows a card/modal/page with that pokemon's info
-- Searching and pressing enter on the search bar will show the result instead of the list
-- Your app needs at least two different routes (/home /more for example -> be creative!)
-
-You can use any dependency you want, (axios, bootstrap, material ui...)
-
-## Bonus points!
-- A view with more details about the pokemon selected in the list
-- Graphs!
-- Unit Testing
-- Linting
-- Nice UI
-- Explain Code architecture
-- Documentation
-
-## Useful links
-- [React docs](https://reactjs.org/docs/getting-started.html)
-- [PokeApi docs](https://pokeapi.co/docs/v2.html)
+### App
+Início - A aplicação é bem simples, quando entrar terá um loading para fazer a busca inicial dos pokémons assim sendo listados em telas. 
+Barra de pesquisa - Podendo pesquisar o Pokemon a partir do Nome ou ID após o enter ser pressionado.
+[IntersectionObserver](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) - Foi utilizado para a partir do scroll identificar o final e assim fazer a busca dos próximos 50 pokemons.
+Pokemon/Item - A cada item/pokemon listado, terá um botão de "more info" assim podendo abrir cada um deles e mostrando as especificações dos base stats
